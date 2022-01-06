@@ -9,7 +9,7 @@ Steps:
 2. Have a DFS share for your hosts file and a user account having RW permissions to this share
 
 3. Automate this script with Windows Task Scheduler
-    * Mandatory parameters for script:
+   * Mandatory parameters for script:
      * URL: direct download link to blacklist host file
      * Destination: DFS share path
      * Username: DFS Username with permissions to read and write Destination
@@ -22,6 +22,8 @@ Steps:
 
 
 Example how to run this script with Powershell. This can be placed to Task Manager or ran manually.
+
+
 Powershell.exe -File "C:\Users\MyName\Documents\Automation\run.ps1" -URL "https://hosts.oisd.nl/basic/" -Destination "\\Router\Hosts\" -Username "MyUsername" -PasswordFile "C:\Users\MyName\Documents\Automation\pw.txt" -OutputFile "oisd_hosts_basic.txt"
 
 
