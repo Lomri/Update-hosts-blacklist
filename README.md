@@ -4,7 +4,7 @@ Updates hosts blacklist for my home router for adblocking, or blocking access to
 Steps:
 
 1. Find a domain blacklist hosts file
-    *such as https://hosts.oisd.nl/basic/
+    * such as https://hosts.oisd.nl/basic/
 2. Have a DFS share for your hosts file and a user account having RW permissions to this share
 3. Automate this script with Windows Task Scheduler
     -> Mandatory parameters for script:
