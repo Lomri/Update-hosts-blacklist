@@ -14,8 +14,8 @@ Steps:
      * Destination: DFS share path
      * Username: DFS Username with permissions to read and write Destination
      * PasswordFile: File with Powershell Securestring converted password string
-      * Securestring your password with Powershell:
-      * Write to Powershell -> "password" | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString > pw.txt
+       * Securestring your password with Powershell:
+       * Write to Powershell -> "password" | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString > pw.txt
      * OutputFile: File name to be saved to Destination
 
  4. Configure your router to include this hosts file to DNS requests
