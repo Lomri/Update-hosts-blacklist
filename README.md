@@ -17,6 +17,8 @@ Steps:
        * Securestring your password with Powershell:
        * Write to Powershell -> "password" | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString > pw.txt
      * OutputFile: File name to be saved to Destination
+   * Set Task Manager to run this automation with current user, even if the user is not logged in (makes it invisibly run in the background)
+   * Task Manager NEEDS to run this script with the same Windows User Account that you used to create the SecureString! SecureString can't be read by other accounts when created without a key.
 
  4. Configure your router to include this hosts file to DNS requests
 
