@@ -10,13 +10,13 @@ Steps:
 
 3. Automate this script with Windows Task Scheduler
     * Mandatory parameters for script:
-          * URL: direct download link to blacklist host file
-          * Destination: DFS share path
-          * Username: DFS Username with permissions to read and write Destination
-          * PasswordFile: File with Powershell Securestring converted password string
-                  * Securestring your password with Powershell:
-                  * Write to Powershell -> "password" | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString > pw.txt
-          * OutputFile: File name to be saved to Destination
+     * URL: direct download link to blacklist host file
+     * Destination: DFS share path
+     * Username: DFS Username with permissions to read and write Destination
+     * PasswordFile: File with Powershell Securestring converted password string
+      * Securestring your password with Powershell:
+      * Write to Powershell -> "password" | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString > pw.txt
+     * OutputFile: File name to be saved to Destination
 
  4. Configure your router to include this hosts file to DNS requests
 
